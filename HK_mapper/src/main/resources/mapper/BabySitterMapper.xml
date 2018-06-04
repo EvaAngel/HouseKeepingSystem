@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.BabySitterMapper">
+    <select id="queryBabySitter" resultType="cn.shouguang.bean.BabySitter">
+        select * from hk_babysitter;
+    </select>
+    <select id="queryBabySitterByAddress" resultType="cn.shouguang.bean.BabySitter">
+        SELECT  * FROM hk_babysitter WHERE address=#{address};
+    </select>
+    <select id="queryBabySitterByType" parameterType="int" resultType="cn.shouguang.bean.BabySitter">
+        SELECT  * FROM hk_babysitter WHERE typeid=#{typeid};
+    </select>
+</mapper>

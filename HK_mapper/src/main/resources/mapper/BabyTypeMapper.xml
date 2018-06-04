@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.BabyTypeMapper">
+    <select id="queryBabyType" resultType="cn.shouguang.bean.BabyType">
+    select * from hk_babytype;
+</select>
+    <select id="queryBabyIdByType" parameterType="String" resultType="int">
+     SELECT id from hk_babytype WHERE type=#{name};
+    </select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.BabyServiceUserMapper">
+    <insert id="addService" parameterType="cn.shouguang.bean.BabyServiceUser" useGeneratedKeys="true" keyProperty="id">
+     INSERT into hk_service (baby_type_id,sub_type_id,starttime,endtime,chooseaddress,advice,userid,status) VALUES
+     (#{babyType.id},#{subType.id},#{startTime},#{endTime},#{chooseAddress},#{advice},#{user.id},#{status});
+</insert>
+    <insert id="addServiceAndBaby" parameterType="cn.shouguang.bean.BabyServiceUser" useGeneratedKeys="true" keyProperty="id">
+        INSERT into hk_service (baby_type_id,sub_type_id,starttime,endtime,chooseaddress,advice,userid,babyid,status) VALUES
+        (#{babyType.id},#{subType.id},#{startTime},#{endTime},#{chooseAddress},#{advice},#{user.id},#{babySitter.id},#{status});
+    </insert>
+    <select id="queryBabyIdbyTimeAndStatus" resultType="int">
+        SELECT DISTINCT(babyid) from hk_service where babyid not in
+        (select DISTINCT(babyid) from hk_service
+        where (( #{starttime}<![CDATA[<]]> starttime and starttime <![CDATA[<]]>#{endtime} and endtime <![CDATA[>]]>#{endtime})
+        or
+        (starttime <![CDATA[<]]> #{starttime} and endtime <![CDATA[>]]> #{endtime} )
+        or
+        (starttime <![CDATA[>]]> #{starttime} and endtime <![CDATA[<]]> #{endtime})
+        or
+        ( #{starttime}<![CDATA[<]]>endtime and endtime <![CDATA[<]]>#{endtime} and starttime <![CDATA[<]]> #{starttime})))
+    </select>
+</mapper>

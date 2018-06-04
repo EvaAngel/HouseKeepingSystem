@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="HK_api" />
+        <module name="HK_domain" />
+        <module name="HK_mapper" />
+        <module name="HK_service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HK_api" target="1.5" />
+      <module name="HK_domain" target="1.5" />
+      <module name="HK_mapper" target="1.5" />
+      <module name="HK_service" target="1.5" />
+      <module name="HK_web" target="1.7" />
+      <module name="HouseKeepingSystem" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
