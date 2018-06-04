@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/HK_domain/HK_domain.iml" filepath="$PROJECT_DIR$/HK_domain/HK_domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/HK_mapper/HK_mapper.iml" filepath="$PROJECT_DIR$/HK_mapper/HK_mapper.iml" />
       <module fileurl="file://$PROJECT_DIR$/HK_service/HK_service.iml" filepath="$PROJECT_DIR$/HK_service/HK_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HK_web/HK_web.iml" filepath="$PROJECT_DIR$/HK_web/HK_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/HouseKeepingSystem.iml" filepath="$PROJECT_DIR$/HouseKeepingSystem.iml" />
     </modules>
   </component>

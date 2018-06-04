@@ -14,6 +14,7 @@
         <module>HK_service</module>
         <module>HK_api</module>
         <module>HK_web</module>
+        <module>HK_web</module>
     </modules>
         <dependencies>
             <!-- 1 junit -->

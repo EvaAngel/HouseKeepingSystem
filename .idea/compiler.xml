@@ -10,6 +10,7 @@
         <module name="HK_domain" />
         <module name="HK_mapper" />
         <module name="HK_service" />
+        <module name="HK_web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
