@@ -10,7 +10,7 @@
         <module name="HK_domain" />
         <module name="HK_mapper" />
         <module name="HK_service" />
-        <module name="HK_web" />
+        <module name="HK_webapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +19,7 @@
       <module name="HK_mapper" target="1.5" />
       <module name="HK_service" target="1.5" />
       <module name="HK_web" target="1.7" />
+      <module name="HK_webapp" target="1.7" />
       <module name="HouseKeepingSystem" target="1.5" />
     </bytecodeTargetLevel>
   </component>
