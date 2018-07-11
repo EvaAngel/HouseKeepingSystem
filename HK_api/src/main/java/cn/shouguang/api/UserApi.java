@@ -2,7 +2,10 @@ package cn.shouguang.api;
 
 import cn.shouguang.bean.BabyServiceUser;
 import cn.shouguang.bean.BabySitter;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
+@Service
 public interface UserApi {
     //登录服务
     //注册服务
