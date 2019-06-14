@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/**
+ * 
+ * @fu xin
+ * @date    2018-02-27 10:41:09
+ * @version $Id$
+ */
+html /*设置全局字体和背景颜色*/
+{ 
+	color:#000;
+	background:#FFF;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+table /*表格设置没有间距*/ 
+{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+a
+{
+	text-decoration: none;
+}
+em,
+strong,
+b,
+u,
+i /*字体的样式与粗细*/
+{
+	font-style:normal;
+	font-weight:normal;
+}
+ol,
+ul /*设置样式为none*/
+{
+	list-style:none;
+}
+caption,
+th  /*表头左距中*/
+{
+	text-align:left;
+}
+h1,
+h2,
+h3 /*字设置*/
+ {
+	font-size:100%;
+	font-weight:normal;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%; /*to enable resizing for IE*/
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+input
+{
+   border:none;
+}

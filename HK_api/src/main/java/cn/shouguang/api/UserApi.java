@@ -2,11 +2,10 @@ package cn.shouguang.api;
 
 import cn.shouguang.bean.BabyServiceUser;
 import cn.shouguang.bean.BabySitter;
-import cn.shouguang.bean.BabyType;
+import org.springframework.stereotype.Service;
 
-import java.sql.Date;
 import java.util.List;
-
+@Service
 public interface UserApi {
     //登录服务
     //注册服务
